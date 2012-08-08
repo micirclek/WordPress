@@ -18,6 +18,9 @@ function wp_install_defaults($user_id) {
 		$cat_id = 1;
 	}
 
+	update_option('permalink_structure', '/%postname%/');
+	update_option('rewrite_rules', 'a:127:{s:18:"micki_right_box/?$";s:35:"index.php?post_type=micki_right_box";s:48:"micki_right_box/feed/(feed|rdf|rss|rss2|atom)/?$";s:52:"index.php?post_type=micki_right_box&feed=$matches[1]";s:43:"micki_right_box/(feed|rdf|rss|rss2|atom)/?$";s:52:"index.php?post_type=micki_right_box&feed=$matches[1]";s:35:"micki_right_box/page/([0-9]{1,})/?$";s:53:"index.php?post_type=micki_right_box&paged=$matches[1]";s:19:"micki_bottom_box/?$";s:36:"index.php?post_type=micki_bottom_box";s:49:"micki_bottom_box/feed/(feed|rdf|rss|rss2|atom)/?$";s:53:"index.php?post_type=micki_bottom_box&feed=$matches[1]";s:44:"micki_bottom_box/(feed|rdf|rss|rss2|atom)/?$";s:53:"index.php?post_type=micki_bottom_box&feed=$matches[1]";s:36:"micki_bottom_box/page/([0-9]{1,})/?$";s:54:"index.php?post_type=micki_bottom_box&paged=$matches[1]";s:14:"micki_quote/?$";s:31:"index.php?post_type=micki_quote";s:44:"micki_quote/feed/(feed|rdf|rss|rss2|atom)/?$";s:48:"index.php?post_type=micki_quote&feed=$matches[1]";s:39:"micki_quote/(feed|rdf|rss|rss2|atom)/?$";s:48:"index.php?post_type=micki_quote&feed=$matches[1]";s:31:"micki_quote/page/([0-9]{1,})/?$";s:49:"index.php?post_type=micki_quote&paged=$matches[1]";s:47:"category/(.+?)/feed/(feed|rdf|rss|rss2|atom)/?$";s:52:"index.php?category_name=$matches[1]&feed=$matches[2]";s:42:"category/(.+?)/(feed|rdf|rss|rss2|atom)/?$";s:52:"index.php?category_name=$matches[1]&feed=$matches[2]";s:35:"category/(.+?)/page/?([0-9]{1,})/?$";s:53:"index.php?category_name=$matches[1]&paged=$matches[2]";s:17:"category/(.+?)/?$";s:35:"index.php?category_name=$matches[1]";s:44:"tag/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:42:"index.php?tag=$matches[1]&feed=$matches[2]";s:39:"tag/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:42:"index.php?tag=$matches[1]&feed=$matches[2]";s:32:"tag/([^/]+)/page/?([0-9]{1,})/?$";s:43:"index.php?tag=$matches[1]&paged=$matches[2]";s:14:"tag/([^/]+)/?$";s:25:"index.php?tag=$matches[1]";s:45:"type/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:50:"index.php?post_format=$matches[1]&feed=$matches[2]";s:40:"type/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:50:"index.php?post_format=$matches[1]&feed=$matches[2]";s:33:"type/([^/]+)/page/?([0-9]{1,})/?$";s:51:"index.php?post_format=$matches[1]&paged=$matches[2]";s:15:"type/([^/]+)/?$";s:33:"index.php?post_format=$matches[1]";s:43:"micki_right_box/[^/]+/attachment/([^/]+)/?$";s:32:"index.php?attachment=$matches[1]";s:53:"micki_right_box/[^/]+/attachment/([^/]+)/trackback/?$";s:37:"index.php?attachment=$matches[1]&tb=1";s:73:"micki_right_box/[^/]+/attachment/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:68:"micki_right_box/[^/]+/attachment/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:68:"micki_right_box/[^/]+/attachment/([^/]+)/comment-page-([0-9]{1,})/?$";s:50:"index.php?attachment=$matches[1]&cpage=$matches[2]";s:36:"micki_right_box/([^/]+)/trackback/?$";s:42:"index.php?micki_right_box=$matches[1]&tb=1";s:56:"micki_right_box/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:54:"index.php?micki_right_box=$matches[1]&feed=$matches[2]";s:51:"micki_right_box/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:54:"index.php?micki_right_box=$matches[1]&feed=$matches[2]";s:44:"micki_right_box/([^/]+)/page/?([0-9]{1,})/?$";s:55:"index.php?micki_right_box=$matches[1]&paged=$matches[2]";s:51:"micki_right_box/([^/]+)/comment-page-([0-9]{1,})/?$";s:55:"index.php?micki_right_box=$matches[1]&cpage=$matches[2]";s:36:"micki_right_box/([^/]+)(/[0-9]+)?/?$";s:54:"index.php?micki_right_box=$matches[1]&page=$matches[2]";s:32:"micki_right_box/[^/]+/([^/]+)/?$";s:32:"index.php?attachment=$matches[1]";s:42:"micki_right_box/[^/]+/([^/]+)/trackback/?$";s:37:"index.php?attachment=$matches[1]&tb=1";s:62:"micki_right_box/[^/]+/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:57:"micki_right_box/[^/]+/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:57:"micki_right_box/[^/]+/([^/]+)/comment-page-([0-9]{1,})/?$";s:50:"index.php?attachment=$matches[1]&cpage=$matches[2]";s:44:"micki_bottom_box/[^/]+/attachment/([^/]+)/?$";s:32:"index.php?attachment=$matches[1]";s:54:"micki_bottom_box/[^/]+/attachment/([^/]+)/trackback/?$";s:37:"index.php?attachment=$matches[1]&tb=1";s:74:"micki_bottom_box/[^/]+/attachment/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:69:"micki_bottom_box/[^/]+/attachment/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:69:"micki_bottom_box/[^/]+/attachment/([^/]+)/comment-page-([0-9]{1,})/?$";s:50:"index.php?attachment=$matches[1]&cpage=$matches[2]";s:37:"micki_bottom_box/([^/]+)/trackback/?$";s:43:"index.php?micki_bottom_box=$matches[1]&tb=1";s:57:"micki_bottom_box/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:55:"index.php?micki_bottom_box=$matches[1]&feed=$matches[2]";s:52:"micki_bottom_box/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:55:"index.php?micki_bottom_box=$matches[1]&feed=$matches[2]";s:45:"micki_bottom_box/([^/]+)/page/?([0-9]{1,})/?$";s:56:"index.php?micki_bottom_box=$matches[1]&paged=$matches[2]";s:52:"micki_bottom_box/([^/]+)/comment-page-([0-9]{1,})/?$";s:56:"index.php?micki_bottom_box=$matches[1]&cpage=$matches[2]";s:37:"micki_bottom_box/([^/]+)(/[0-9]+)?/?$";s:55:"index.php?micki_bottom_box=$matches[1]&page=$matches[2]";s:33:"micki_bottom_box/[^/]+/([^/]+)/?$";s:32:"index.php?attachment=$matches[1]";s:43:"micki_bottom_box/[^/]+/([^/]+)/trackback/?$";s:37:"index.php?attachment=$matches[1]&tb=1";s:63:"micki_bottom_box/[^/]+/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:58:"micki_bottom_box/[^/]+/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:58:"micki_bottom_box/[^/]+/([^/]+)/comment-page-([0-9]{1,})/?$";s:50:"index.php?attachment=$matches[1]&cpage=$matches[2]";s:39:"micki_quote/[^/]+/attachment/([^/]+)/?$";s:32:"index.php?attachment=$matches[1]";s:49:"micki_quote/[^/]+/attachment/([^/]+)/trackback/?$";s:37:"index.php?attachment=$matches[1]&tb=1";s:69:"micki_quote/[^/]+/attachment/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:64:"micki_quote/[^/]+/attachment/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:64:"micki_quote/[^/]+/attachment/([^/]+)/comment-page-([0-9]{1,})/?$";s:50:"index.php?attachment=$matches[1]&cpage=$matches[2]";s:32:"micki_quote/([^/]+)/trackback/?$";s:38:"index.php?micki_quote=$matches[1]&tb=1";s:52:"micki_quote/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:50:"index.php?micki_quote=$matches[1]&feed=$matches[2]";s:47:"micki_quote/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:50:"index.php?micki_quote=$matches[1]&feed=$matches[2]";s:40:"micki_quote/([^/]+)/page/?([0-9]{1,})/?$";s:51:"index.php?micki_quote=$matches[1]&paged=$matches[2]";s:47:"micki_quote/([^/]+)/comment-page-([0-9]{1,})/?$";s:51:"index.php?micki_quote=$matches[1]&cpage=$matches[2]";s:32:"micki_quote/([^/]+)(/[0-9]+)?/?$";s:50:"index.php?micki_quote=$matches[1]&page=$matches[2]";s:28:"micki_quote/[^/]+/([^/]+)/?$";s:32:"index.php?attachment=$matches[1]";s:38:"micki_quote/[^/]+/([^/]+)/trackback/?$";s:37:"index.php?attachment=$matches[1]&tb=1";s:58:"micki_quote/[^/]+/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:53:"micki_quote/[^/]+/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:53:"micki_quote/[^/]+/([^/]+)/comment-page-([0-9]{1,})/?$";s:50:"index.php?attachment=$matches[1]&cpage=$matches[2]";s:48:".*wp-(atom|rdf|rss|rss2|feed|commentsrss2)\\.php$";s:18:"index.php?feed=old";s:18:".*wp-register.php$";s:23:"index.php?register=true";s:32:"feed/(feed|rdf|rss|rss2|atom)/?$";s:27:"index.php?&feed=$matches[1]";s:27:"(feed|rdf|rss|rss2|atom)/?$";s:27:"index.php?&feed=$matches[1]";s:20:"page/?([0-9]{1,})/?$";s:28:"index.php?&paged=$matches[1]";s:27:"comment-page-([0-9]{1,})/?$";s:38:"index.php?&page_id=1&cpage=$matches[1]";s:41:"comments/feed/(feed|rdf|rss|rss2|atom)/?$";s:42:"index.php?&feed=$matches[1]&withcomments=1";s:36:"comments/(feed|rdf|rss|rss2|atom)/?$";s:42:"index.php?&feed=$matches[1]&withcomments=1";s:29:"comments/page/?([0-9]{1,})/?$";s:28:"index.php?&paged=$matches[1]";s:44:"search/(.+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:40:"index.php?s=$matches[1]&feed=$matches[2]";s:39:"search/(.+)/(feed|rdf|rss|rss2|atom)/?$";s:40:"index.php?s=$matches[1]&feed=$matches[2]";s:32:"search/(.+)/page/?([0-9]{1,})/?$";s:41:"index.php?s=$matches[1]&paged=$matches[2]";s:14:"search/(.+)/?$";s:23:"index.php?s=$matches[1]";s:47:"author/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:50:"index.php?author_name=$matches[1]&feed=$matches[2]";s:42:"author/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:50:"index.php?author_name=$matches[1]&feed=$matches[2]";s:35:"author/([^/]+)/page/?([0-9]{1,})/?$";s:51:"index.php?author_name=$matches[1]&paged=$matches[2]";s:17:"author/([^/]+)/?$";s:33:"index.php?author_name=$matches[1]";s:69:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/feed/(feed|rdf|rss|rss2|atom)/?$";s:80:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]&feed=$matches[4]";s:64:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/(feed|rdf|rss|rss2|atom)/?$";s:80:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]&feed=$matches[4]";s:57:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/page/?([0-9]{1,})/?$";s:81:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]&paged=$matches[4]";s:39:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/?$";s:63:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]";s:56:"([0-9]{4})/([0-9]{1,2})/feed/(feed|rdf|rss|rss2|atom)/?$";s:64:"index.php?year=$matches[1]&monthnum=$matches[2]&feed=$matches[3]";s:51:"([0-9]{4})/([0-9]{1,2})/(feed|rdf|rss|rss2|atom)/?$";s:64:"index.php?year=$matches[1]&monthnum=$matches[2]&feed=$matches[3]";s:44:"([0-9]{4})/([0-9]{1,2})/page/?([0-9]{1,})/?$";s:65:"index.php?year=$matches[1]&monthnum=$matches[2]&paged=$matches[3]";s:26:"([0-9]{4})/([0-9]{1,2})/?$";s:47:"index.php?year=$matches[1]&monthnum=$matches[2]";s:43:"([0-9]{4})/feed/(feed|rdf|rss|rss2|atom)/?$";s:43:"index.php?year=$matches[1]&feed=$matches[2]";s:38:"([0-9]{4})/(feed|rdf|rss|rss2|atom)/?$";s:43:"index.php?year=$matches[1]&feed=$matches[2]";s:31:"([0-9]{4})/page/?([0-9]{1,})/?$";s:44:"index.php?year=$matches[1]&paged=$matches[2]";s:13:"([0-9]{4})/?$";s:26:"index.php?year=$matches[1]";s:27:".?.+?/attachment/([^/]+)/?$";s:32:"index.php?attachment=$matches[1]";s:37:".?.+?/attachment/([^/]+)/trackback/?$";s:37:"index.php?attachment=$matches[1]&tb=1";s:57:".?.+?/attachment/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:52:".?.+?/attachment/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:52:".?.+?/attachment/([^/]+)/comment-page-([0-9]{1,})/?$";s:50:"index.php?attachment=$matches[1]&cpage=$matches[2]";s:20:"(.?.+?)/trackback/?$";s:35:"index.php?pagename=$matches[1]&tb=1";s:40:"(.?.+?)/feed/(feed|rdf|rss|rss2|atom)/?$";s:47:"index.php?pagename=$matches[1]&feed=$matches[2]";s:35:"(.?.+?)/(feed|rdf|rss|rss2|atom)/?$";s:47:"index.php?pagename=$matches[1]&feed=$matches[2]";s:28:"(.?.+?)/page/?([0-9]{1,})/?$";s:48:"index.php?pagename=$matches[1]&paged=$matches[2]";s:35:"(.?.+?)/comment-page-([0-9]{1,})/?$";s:48:"index.php?pagename=$matches[1]&cpage=$matches[2]";s:20:"(.?.+?)(/[0-9]+)?/?$";s:47:"index.php?pagename=$matches[1]&page=$matches[2]";s:27:"[^/]+/attachment/([^/]+)/?$";s:32:"index.php?attachment=$matches[1]";s:37:"[^/]+/attachment/([^/]+)/trackback/?$";s:37:"index.php?attachment=$matches[1]&tb=1";s:57:"[^/]+/attachment/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:52:"[^/]+/attachment/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:52:"[^/]+/attachment/([^/]+)/comment-page-([0-9]{1,})/?$";s:50:"index.php?attachment=$matches[1]&cpage=$matches[2]";s:20:"([^/]+)/trackback/?$";s:31:"index.php?name=$matches[1]&tb=1";s:40:"([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:43:"index.php?name=$matches[1]&feed=$matches[2]";s:35:"([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:43:"index.php?name=$matches[1]&feed=$matches[2]";s:35:"([^/]+)/comment-page-([0-9]{1,})/?$";s:44:"index.php?name=$matches[1]&cpage=$matches[2]";s:20:"([^/]+)(/[0-9]+)?/?$";s:43:"index.php?name=$matches[1]&page=$matches[2]";s:16:"[^/]+/([^/]+)/?$";s:32:"index.php?attachment=$matches[1]";s:26:"[^/]+/([^/]+)/trackback/?$";s:37:"index.php?attachment=$matches[1]&tb=1";s:46:"[^/]+/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:41:"[^/]+/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:41:"[^/]+/([^/]+)/comment-page-([0-9]{1,})/?$";s:50:"index.php?attachment=$matches[1]&cpage=$matches[2]";}');
+
 	$wpdb->insert( $wpdb->terms, array('term_id' => $cat_id, 'name' => $cat_name, 'slug' => $cat_slug, 'term_group' => 0) );
 	$wpdb->insert( $wpdb->term_taxonomy, array('term_id' => $cat_id, 'taxonomy' => 'category', 'description' => '', 'parent' => 0, 'count' => 1));
 	$cat_tt_id = $wpdb->insert_id;
@@ -85,9 +88,11 @@ function wp_install_defaults($user_id) {
 
 	$general_info_content = 'Circle K is an amazing community service group on campus.  Although we focus on service, there are plenty of social and leadership opportunities as well.  Whether you are a new student or upperclassman, education major or engineer, Circle K is the perfect place to find your circle.
 
-Supported by Kiwanis International, our club is also affiliated with a global network of do-gooders.  Worldwide, over 13,000 Circle K members from 17 nations benefit their communities in the name of Circle K.  Several other organizations make up the <a href="http://template.micirclek.org/about/kiwanis-family/">Kiwanis Family</a>, such as Key Club for high schoolers and additional clubs for younger children or adults with disabilities.  Together, the Kiwanis Family also takes part in impactful global Kiwanis initiatives like the <a href="http://eliminateproject.org">Eliminate Project</a>.
+Supported by Kiwanis International, our club is also affiliated with a global network of do-gooders.  Worldwide, over 13,000 Circle K members from 17 nations benefit their communities in the name of Circle K.  Several other organizations make up the <a href="SITE_URL/about/kiwanis-family/">Kiwanis Family</a>, such as Key Club for high schoolers and additional clubs for younger children or adults with disabilities.  Together, the Kiwanis Family also takes part in impactful global Kiwanis initiatives like the <a href="http://eliminateproject.org">Eliminate Project</a>.
 
-For those interested, this website is the perfect place to begin your journey with Circle K.  At some point, we encourage you to <a href="http://template.micirclek.org/join/how-to-join/">become a member</a>.  You need not be a member to volunteer with us, though, so before joining, certainly check out our <a href="http://template.micirclek.org/events/">events page</a> for upcoming service projects, socials, and meetings.  We look forward to seeing you there!';
+For those interested, this website is the perfect place to begin your journey with Circle K.  At some point, we encourage you to <a href="SITE_URL/join/how-to-join/">become a member</a>.  You need not be a member to volunteer with us, though, so before joining, certainly check out our <a href="SITE_URL/events/">events page</a> for upcoming service projects, socials, and meetings.  We look forward to seeing you there!';
+
+	$general_info_content = str_replace('SITE_URL', esc_url(network_home_url()), $general_info_content);
 
 	//About subpages
 	$guid = get_option('home') . '/?page_id=' . $page_num++;
@@ -111,7 +116,7 @@ For those interested, this website is the perfect place to begin your journey wi
 
 	$meet_the_board_content = "<table>
 <tr>
-<td><img src='BLAH' alt='Silhouette' /></td>
+<td><img src='IMAGE_DIR/silhouette_male.png' alt='Silhouette' /></td>
 <td>
 <h4>Ian McDonald, President</h4>
 <p>
@@ -123,7 +128,7 @@ For those interested, this website is the perfect place to begin your journey wi
 </td>
 </tr>
 <tr>
-<td><img src='BLAH' alt='Silhouette' /></td>
+<td><img src='IMAGE_DIR/silhouette_male.png' alt='Silhouette' /></td>
 <td>
 <h4>Marc Rudolph, Vice President</h4>
 <p>
@@ -135,7 +140,7 @@ For those interested, this website is the perfect place to begin your journey wi
 </td>
 </tr>
 <tr>
-<td><img src='BLAH' alt='Silhouette' /></td>
+<td><img src='IMAGE_DIR/silhouette_female.png' alt='Silhouette' /></td>
 <td>
 <h4>Amanda Klein, Secretary</h4>
 <p>
@@ -147,7 +152,7 @@ For those interested, this website is the perfect place to begin your journey wi
 </td>
 </tr>
 <tr>
-<td><img src='BLAH' alt='Silhouette' /></td>
+<td><img src='IMAGE_DIR/silhouette_male.png' alt='Silhouette' /></td>
 <td>
 <h4>Joe Kurleto, Treasurer</h4>
 <p>
@@ -159,7 +164,7 @@ For those interested, this website is the perfect place to begin your journey wi
 </td>
 </tr>
 <tr>
-<td><img src='BLAH' alt='Silhouette' /></td>
+<td><img src='IMAGE_DIR/silhouette_female.png' alt='Silhouette' /></td>
 <td>
 <h4>Erica Garcia, Bulletin Editor</h4>
 <p>
@@ -171,6 +176,9 @@ For those interested, this website is the perfect place to begin your journey wi
 </td>
 </tr>
 </table>";
+
+
+	$meet_the_board_content = str_replace('IMAGE_DIR', esc_url(network_home_url('/wp-content/themes/micki/images')), $meet_the_board_content);
 
 	$guid = get_option('home') . '/?page_id=' . $page_num++;
 	$wpdb->insert( $wpdb->posts, array(
@@ -192,7 +200,7 @@ For those interested, this website is the perfect place to begin your journey wi
 
 	$kiwanis_family_content = "<table>
 <tr>
-<td><a href='http://sites.kiwanis.org/kiwanis/en/home.aspx'><img src='BLAH' alt='kiwanis' /></a></td>
+<td><a href='http://sites.kiwanis.org/kiwanis/en/home.aspx'><img src='IMAGE_DIR/kiwanis.png' alt='kiwanis' /></a></td>
 <td>
 <h4>Kiwanis International</h4>
 <p>
@@ -201,7 +209,7 @@ Established in 1915, Kiwanis International is one of the largest service organiz
 </td>
 </tr>
 <tr>
-<td><a href='http://www.aktionclub.org/Home.aspx'><img src='BLAH' alt='key club' /></a></td>
+<td><a href='http://www.aktionclub.org/Home.aspx'><img src='IMAGE_DIR/aktion-club.png' alt='aktion club' /></a></td>
 <td>
 <h4>Aktion Club</h4>
 <p>
@@ -210,7 +218,7 @@ Aktion Club is a community-service organization for adults who live with a disab
 </td>
 </tr>
 <tr>
-<td><a href='http://www.keyclub.org/home.aspx'><img src='BLAH' alt='aktion club' /></a></td>
+<td><a href='http://www.keyclub.org/home.aspx'><img src='IMAGE_DIR/key-club.png' alt='key club' /></a></td>
 <td>
 <h4>Key Club International</h4>
 <p>
@@ -219,7 +227,7 @@ Key Club International is the oldest and largest service program for high school
 </td>
 </tr>
 <tr>
-<td><a href='http://www.buildersclub.org/Home.aspx'><img src='BLAH' alt='builders club' /></a></td>
+<td><a href='http://www.buildersclub.org/Home.aspx'><img src='IMAGE_DIR/builders-club.png' alt='builders club' /></a></td>
 <td>
 <h4>Builders Club</h4>
 <p>
@@ -228,7 +236,7 @@ Builders Club is the largest community-service program for junior and middle sch
 </td>
 </tr>
 <tr>
-<td><a href='http://www.kiwaniskids.org/en/Kiwanis_Kids/KiwanisKidsHome.aspx'><img src='BLAH' alt='k-kids' /></a></td>
+<td><a href='http://www.kiwaniskids.org/en/Kiwanis_Kids/KiwanisKidsHome.aspx'><img src='IMAGE_DIR/k-kids.png' alt='k-kids' /></a></td>
 <td>
 <h4>Kiwanis Kids</h4>
 <p>
@@ -237,6 +245,8 @@ Kiwanis Kids is the fastest growing service club for elementary students. The pr
 </td>
 </tr>
 </table>";
+
+	$kiwanis_family_content = str_replace('IMAGE_DIR', esc_url(network_home_url('/wp-content/themes/micki/images')), $kiwanis_family_content);
 
 	$guid = get_option('home') . '/?page_id=' . $page_num++;
 	$wpdb->insert( $wpdb->posts, array(
@@ -390,7 +400,7 @@ Before that, though, we definitely encourage you to try out service projects, so
 								'post_author' => $user_id,
 								'post_date' => $now,
 								'post_date_gmt' => $now_gmt,
-								'post_content' => 'District Convention is at Central Michigan February 17-19.  Click <a href="http://micirclek.org/dcon">here</a> for more info.',
+								'post_content' => 'District Convention is at Northwood University March 22-24.  Visit <a href="http://micirclek.org/dcon">http://micirclek.org/dcon</a> for more info.',
 								'post_title' => __( 'Promoted Project' ),
 								'post_name' => __( 'promoted-project' ),
 								'post_modified' => $now,

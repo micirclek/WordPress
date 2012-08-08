@@ -1,0 +1,377 @@
+/*
+Theme Name: Michigan Circle K
+Theme URI:
+Description: Theme for Michigan Circle K clubs.
+Author: Tyler Johnson
+Author URI:
+Version: 1.0
+Tags: CKI
+
+License:
+License URI:
+*/
+
+/* Colors:
+ * Dark blue: #2c4a72
+ * Light blue: #569bbc
+ * Yellow: #ffdd3c
+ */
+
+@def DARK     rgb(44, 74, 114);
+@def LIGHT    rgb(86, 155, 188);
+@def EMPHASIS rgb(255, 221, 60);
+
+h1, h2, h3, h4, h5, h6 {
+	color: DARK;
+	font-family: Century Gothic, Helvetica;
+	margin: 8px 0px;
+	padding: 2px 0px;
+}
+
+#nav ul li a {
+	font-family: Century Gothic, Helvetica;
+	font-size: 12pt;
+	font-weight: bold;
+	color: DARK;
+}
+
+p, a {
+	margin: 12px 0px;
+	padding: 2px 0px;
+	line-height: 1.5em;
+	text-decoration: none;
+}
+
+a {
+	color: DARK;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+img {
+	border: none;
+}
+
+img:focus {
+	border: none;
+}
+
+ul {
+	padding-left: 25px;
+}
+
+body {
+	margin: 18px 0px;
+	background: #fefef6;
+	color: #303030;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11pt;
+	overflow-y: scroll;
+}
+
+#wrapper {
+	width: 900px;
+	border: solid 12px LIGHT;
+	border-radius: 20px;
+	margin: auto;
+	background: white;
+}
+
+#header {
+	background-image: url('images/header.png');
+	height: 166px;
+}
+
+#nav {
+	background: EMPHASIS;
+	padding: 0px;
+}
+
+#nav ul {
+	padding: 0px;
+	margin: 0px;
+}
+
+#nav li {
+	float: left;
+	list-style: none;
+	padding: 0px;
+}
+
+#nav li a {
+	display: block;
+	padding: 7px 27px;
+	margin: 0px;
+}
+
+#nav li a:hover {
+	color: white;
+	background: LIGHT;
+	text-decoration: none;
+}
+
+#nav h4 {
+	margin: 0px;
+}
+
+#fullContent {
+	padding: 14px 23px;
+	width: 854px;
+}
+
+#main {
+	padding-bottom: 20px;
+	margin: 10px 0px;
+}
+
+#mainLeft {
+	float: left;
+	margin-left: 40px;
+}
+
+#slideshow {
+	width: 560px;
+	height: 450px;
+}
+
+#slideshow div.slide {
+	width: 540px;
+	height: 360px;
+	position: absolute;
+}
+
+#slideshow div.slide img {
+	width: 540px;
+	height: 360px;
+	position: absolute;
+}
+
+#slideshow div.slide div.caption {
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	background: black;
+	width: 540px;
+	height: 60px;
+	opacity: 0.7;
+}
+
+#slideshow div.slide h4 {
+	position: absolute;
+	bottom: 23px;
+	left: 10px;
+	display: block;
+	width: 520px;
+}
+
+#slideshow div.slide p {
+	margin: 0px;
+	position: absolute;
+	bottom: 7px;
+	left: 10px;
+	display: block;
+	width: 520px;
+	font-size: 10pt;
+	line-height: 1.4em;
+}
+
+#slideshow img.thumb {
+	width: 120px;
+	height: 80px;
+	position: relative;
+	top: 376px;
+	margin-right: 14px;
+	border: solid 2px white;
+	opacity: 0.7;
+	cursor: pointer;
+}
+
+#slideshow img.thumb.active {
+	opacity: 1;
+}
+
+#slideshow img.thumb:hover {
+	border-color: LIGHT;
+}
+
+#mainRight {
+	float: right;
+	margin-right: 40px;
+}
+
+.rightBox {
+	min-height: 136px;
+	width: 215px;
+	padding: 0px 10px;
+	margin-bottom: 20px;
+	border: solid 2px LIGHT;
+	border-radius: 4px;
+ 	}
+
+.rightBox h3 {
+	border-bottom: solid 1px LIGHT;
+}
+
+#promos {
+	background: EMPHASIS;
+	padding-top: 15px;
+	padding-bottom: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.promoBox {
+	float: left;
+	width: 162px;
+	padding: 0px 10px;
+	margin-right: 30px;
+}
+
+.promoBox a {
+	font-weight: normal;
+}
+
+.promoBox.mission {
+	width: 200px;
+	padding-top: 25px;
+	padding-bottom: 15px;
+	padding-left: 0px;
+	padding-right: 0px;
+	text-align: center;
+	margin-right: 0px;
+}
+
+.promoBox.mission p {
+	font-style: italic;
+}
+
+.promoBox.marginOff {
+	margin: 0px;
+}
+
+#page {
+	padding-bottom: 15px;
+}
+
+#page img {
+	padding: 20px;
+}
+
+#pageNav {
+	float: left;
+}
+
+#pageNav ul {
+	padding: 0px;
+	margin-left: 12px;
+	margin-top: 25px;
+	margin-bottom: 10px;
+}
+
+#pageNav li {
+	list-style: none;
+	font-family: Century Gothic, Helvetica;
+	margin: 0px;
+}
+
+#pageNav li a {
+	display: block;
+	width: 165px;
+	color: DARK;
+	margin: 10px;
+	padding: 5px;
+	font-weight: bold;
+	border: solid 2px LIGHT;
+	border-radius: 4px;
+}
+
+#pageNav li a:hover {
+	text-decoration: none;
+	background: LIGHT;
+	color: white;
+}
+
+#pageNav .current_page_item a {
+	background: LIGHT;
+	color: white;
+}
+
+#quote {
+	display: block;
+	background: white;
+	width: 155px;
+	padding: 10px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	border: solid 2px DARK;
+	border-radius: 4px;
+	font-size: 9pt;
+}
+
+#quote h3 {
+	margin-top: 4px;
+	margin-bottom: 2px;
+}
+
+#quote p {
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+#pageContent {
+	float: left;
+	width: 645px;
+	padding: 13px;
+	background: white;
+}
+
+#footer {
+	background: DARK;
+	padding: 10px 0px;
+}
+
+.footerHalf {
+	float: left;
+	width: 450px;
+	text-align: center;
+}
+
+.marginOff {
+	margin-bottom: 0px;
+}
+
+.clearBoth {
+	clear: both;
+}
+
+.clearLeft {
+	clear: left;
+}
+
+.alignRight {
+	text-align: right;
+}
+
+.darkBlue {
+	color: DARK;
+}
+
+.lightBlue {
+	color: LIGHT;
+}
+
+.yellow {
+	color: EMPHASIS;
+}
+
+.white {
+	color: white;
+}
